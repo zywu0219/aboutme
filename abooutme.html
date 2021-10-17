@@ -20,6 +20,27 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+	<script>
+	$(document).ready(function(){
+		$("#I").hover(function(){
+			$("#PICTURE").attr("src","family.jpg");
+		});
+
+		$("#PU").hover(function(){
+			$("#PICTURE").attr("src","pu.jpg");
+		});
+
+		$("#CSIM").hover(function(){
+			$("#PICTURE").attr("src","pucsim.jpg");
+		});
+
+		$("#PICTURE").click(function(){
+			$("#PICTURE").hide();
+			$("#PICTURE").fadeIn("slow")
+		});
+	});
+</script>
 
 
 </head>
@@ -44,18 +65,19 @@
 		
 		<main>
 			<nav>
-			<h1><a href=""class=text-reset text-decoration-none text-white bg-secondary>吳仲彥</a></h1>
+			<h1><a href=""class="text-reset text-decoration-none text-white bg-secondary"
+				target="_blank" id="I">吳仲彥</a></h1>
 			<h2><a href=" https://www.pu.edu.tw/"
-				class=text-reset text-decoration-none text-white bg-secondary>靜宜大學</a>
+				class="text-reset text-decoration-none text-white bg-secondary" id="PU">靜宜大學</a>
 			/ <a href="https://csim.pu.edu.tw/"
-			class=text-reset text-decoration-none text-white bg-secondary>資訊管理學系</a> </h2>
+			class="text-reset text-decoration-none text-white bg-secondary"id="CSIM">資訊管理學系</a> </h2>
 			</nav>
 			<img src="me.jpg" alt="照片"class="img-fluid rounded-circle">
 			<br><br><br>
 
 		<div class="row">
 	
-		<session id="aboutme">
+		<session id="aboutme"class="col-lg-4">
 			<header>關於我</header>
 			<h3>Tel: <a href="tel:0901285235"
 				class="text-reset text-decoration-none text-white bg-info">Tel: 0901285235</a></h3>
